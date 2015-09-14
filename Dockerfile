@@ -5,7 +5,7 @@ MAINTAINER Dmitry Berezovsky <dberezovsky@clockedlegal.com>
 RUN yum -y install epel-release && yum -y update
 
 # Install pre-requiste software
-RUN yum -y install yum-utils git tar acl zip unzip wget && \
+RUN yum -y install yum-utils git tar acl zip unzip wget lftp && \
     yum clean all
     
 # Create user app and grant permissions on /srv folder

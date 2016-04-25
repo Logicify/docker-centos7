@@ -2,7 +2,7 @@ FROM centos:7
 MAINTAINER Dmitry Berezovsky <dberezovsky@clockedlegal.com>
 
 # Install EPEL repository
-RUN yum -y install epel-release && yum -y update
+RUN yum -y install epel-release && yum -y update || true
 
 # Install pre-requiste software
 RUN yum -y install yum-utils git tar acl zip unzip wget lftp && \
